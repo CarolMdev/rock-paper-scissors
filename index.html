@@ -5,13 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <p>Play on the console (F12)</p>
+    <main>
+        <div class="gameBoard">
+            <h1>Rock Paper Scissors</h1>
+            <div class="info">
+                <p class="round"></p>
+                <div class="messageBox">
+                    <p class="message">First to reach 5 points wins</p>
+                    <button class="reset">Play Again</button>
+                </div>
+            </div>
+
+            <div class="score">
+
+                <div class="playerBoard">
+                    <p>YOU: <span winner="player">0</span></p>
+                    <img data-img="player-Selection" src="images/rock.png">
+                </div>
+
+                <div class="computerBoard">
+                    <p>COMPUTER: <span winner="computer">0</span></p>
+                    <img data-img="computer-Selection" src="images/paper.png">
+                </div>
+            </div>
+
+
+            <div class="choiceBoard">
+                <button class="transition" data-choice="rock"><img src="images/rock.png"></button>
+                <button class="transition" data-choice="paper"><img src="images/paper.png"></button>
+                <button class="transition" data-choice="scissors"><img src="images/scissors.png"></button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <a href=https://github.com/CarolMdev>Developed by CarolMdev</a>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
