@@ -67,7 +67,7 @@ function reset() {
         scoreElem.textContent = 0;
     });
     const messageElem = document.querySelector('.message');
-    messageElem.innerHTML = "Best of 5 rounds wins"
+    messageElem.innerHTML = "First to reach 5 points wins"
     gameEnded = false;
     round = 0;
     const imgElements = document.querySelectorAll('.score img');
